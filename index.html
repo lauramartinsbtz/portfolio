@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura — Programadora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="cursor-glow"></div>
+    <div class="noise"></div>
+
+    <header class="header">
+        <a class="logo" href="#inicio" aria-label="Página inicial">L<span>.</span></a>
+
+        <nav class="nav" aria-label="Navegação principal">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#competencias">Competências</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <button class="theme-toggle" type="button" aria-label="Alternar tema" title="Alternar tema">
+            <span class="sun">☼</span>
+            <span class="moon">☾</span>
+        </button>
+    </header>
+
+    <main>
+        <section class="hero section" id="inicio">
+            <div class="hero-orb orb-one"></div>
+            <div class="hero-orb orb-two"></div>
+
+            <div class="hero-content reveal">
+                <p class="eyebrow"><span></span> PORTFÓLIO • DESENVOLVIMENTO</p>
+                <h1><span>eu sou</span><strong>laura<span>!</span></strong></h1>
+                <p class="hero-description">
+                    Programadora apaixonada por transformar ideias em experiências
+                    digitais, funcionais e construídas.
+                </p>
+
+                <div class="hero-actions">
+                    <a class="button primary" href="#projetos">ver projetos <span>↗</span></a>
+                    <a class="button ghost" href="#contato">vamos conversar!</a>
+                </div>
+            </div>
+
+            <div class="hero-code reveal delay-2" aria-hidden="true">
+                <div class="code-window">
+                    <div class="window-bar"><i></i><i></i><i></i><span>laura.js</span></div>
+                    <pre><code><span class="purple">const</span> <span class="blue">laura</span> = {
+  <span class="green">criatividade</span>: <span class="orange">true</span>,
+  <span class="green">cafe</span>: <span class="orange">"muito!"</span>,
+  <span class="green">foco</span>: <span class="orange">"criar"</span>
+  <!-- <span class="green">curiosidade</span>: <span class="orange">"100%"</span>, -->
+  
+};</code></pre>
+                </div>
+            </div>
+
+            <a class="scroll-hint" href="#sobre">
+                <span>scroll para explorar</span>
+                <b>↓</b>
+            </a>
+        </section>
+
+        <section class="section about" id="sobre">
+            <div class="section-heading reveal">
+                <p class="eyebrow"><span></span> 01 — SOBRE MIM</p>
+                <h2>código com <em>intenção.</em></h2>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-copy reveal">
+                    <p class="large-copy">
+                        Sou uma programadora que gosta de unir <strong>tecnologia, criatividade
+                            e resolução de problemas</strong>.
+                    </p>
+                    <p>
+                        Meu objetivo é desenvolver soluções que não sejam apenas eficientes,
+                        mas também agradáveis de usar. Estou sempre aprendendo, experimentando
+                        novas tecnologias e transformando desafios em projetos.
+                    </p>
+                </div>
+
+                <div class="about-card reveal delay-1">
+                    <span class="card-number">01</span>
+                    <h3>curiosa<br><em>por natureza.</em></h3>
+                    <p>Aprender algo novo faz parte do meu processo.</p>
+                    <div class="card-line"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section skills" id="competencias">
+            <div class="section-heading reveal">
+                <p class="eyebrow"><span></span> 02 — COMPETÊNCIAS</p>
+                <h2>minha caixa<br>de <em>ferramentas.</em></h2>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card reveal">
+                    <span class="skill-index">01</span>
+                    <div class="skill-icon">&lt;/&gt;</div>
+                    <h3>HTML</h3>
+                    <p>Estrutura semântica e acessível para experiências web.</p>
+                    <div class="progress"><span style="--level: 90%"></span></div>
+                </article>
+
+                <article class="skill-card reveal delay-1">
+                    <span class="skill-index">02</span>
+                    <div class="skill-icon">✦</div>
+                    <h3>CSS</h3>
+                    <p>Interfaces responsivas, animações e atenção aos detalhes.</p>
+                    <div class="progress"><span style="--level: 88%"></span></div>
+                </article>
+
+                <article class="skill-card reveal delay-2">
+                    <span class="skill-index">03</span>
+                    <div class="skill-icon">JS</div>
+                    <h3>JavaScript</h3>
+                    <p>Interações, lógica e experiências dinâmicas no navegador.</p>
+                    <div class="progress"><span style="--level: 85%"></span></div>
+                </article>
+
+                <article class="skill-card reveal">
+                    <span class="skill-index">04</span>
+                    <div class="skill-icon">C#</div>
+                    <h3>C#</h3>
+                    <p>Programação orientada a objetos e desenvolvimento de aplicações.</p>
+                    <div class="progress"><span style="--level: 78%"></span></div>
+                </article>
+
+                <article class="skill-card reveal delay-1">
+                    <span class="skill-index">05</span>
+                    <div class="skill-icon">C++</div>
+                    <h3>C++</h3>
+                    <p>Lógica, estruturas de dados e programação de alto desempenho.</p>
+                    <div class="progress"><span style="--level: 75%"></span></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section projects" id="projetos">
+            <div class="section-heading reveal">
+                <p class="eyebrow"><span></span> 03 — PROJETOS</p>
+                <h2>coisas que<br>eu <em>construí.</em></h2>
+            </div>
+
+            <div class="projects-list">
+                
+                <a class="project reveal delay-1" href="https://lauramartinsbtz.github.io/TempusLandingPage/" aria-label="Projeto 02">
+                    <span class="project-number">01</span>
+                    <div>
+                        <p>HTML • CSS</p>
+                        <h3>Landing Page - Marca de Relógios</h3>
+                    </div>
+                    <span class="project-arrow">↗</span>
+                </a>
+                <a class="project reveal delay-2" href="https://github.com/lauramartinsbtz/Esp32S3_Arduino" aria-label="Projeto 03">
+                    <span class="project-number">02</span>
+                    <div>
+                        <p>C# • C++</p>
+                        <h3>Arduino - Cyber1</h3>
+                    </div>
+                    <span class="project-arrow">↗</span>
+                </a>
+            </div>
+        </section>
+
+        <section class="section contact" id="contato">
+            <div class="contact-box reveal">
+                <p class="eyebrow"><span></span> 04 — CONTATO</p>
+                <h2>vamos criar algo<br><em>incrível?</em></h2>
+                <p>Encontre-me nas redes.</p>
+
+                <div class="socials">
+                    <!-- Troque os # pelos seus links reais -->
+                    <a href="#" target="_blank" rel="noopener noreferrer">GitHub <span>↗</span></a>
+                    <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn <span>↗</span></a>
+                    <!-- Coloque seu arquivo PDF no projeto e altere o href se necessário 
+                    <a href="cv.pdf" target="_blank" rel="noopener noreferrer">CV <span>↓</span></a>-->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <span>© <span id="year"></span> Laura.</span>
+        <span>feito com código & curiosidade.</span>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
