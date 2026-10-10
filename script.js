@@ -41,3 +41,21 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
 });
+
+
+// Formulário: abre o cliente de e-mail do visitante.
+const contactForm = document.getElementById("contact-form");
+const formStatus = document.getElementById("form-status");
+
+contactForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const data = new FormData(contactForm);
+  const name = data.get("name").trim();
+  const email = data.get("email").trim();
+  const subject = data.get("subject").trim();
+  const message = data.get("message").trim();
+  const destination = "seuemail@exemplo.com"; // TROQUE pelo seu e-mail
+  const body = `Olá, Laura!\n\nNome: ${name}\nE-mail: ${email}\n\n${message}`;
+  window.location.href = `mailto:${destination}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  formStatus.textContent = "Abrindo seu aplicativo de e-mail...";
+});
